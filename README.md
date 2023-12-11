@@ -8,7 +8,10 @@ Ultimately, the app that I will use to show these steps is a book recommendation
 
 While the backend of how the app works is important and interesting, I will spare the details to focus on how the deploying process occurs. 
 
-# Deploying the Web App Process
+# Live Demo:
+https://youtu.be/OzPOlZPHZMc
+
+# Deploying the Web App
 ## DockerHub Set-Up
 * First, we need to sign into DockerHub. This is the external cloud-based image storing system. DockerHub stores docker images in repositories. This is a similar process to github, but for docker images. We will also need to create a repository for this web app project.
 
