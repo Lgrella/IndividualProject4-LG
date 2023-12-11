@@ -12,7 +12,7 @@ While the backend of how the app works is important and interesting, I will spar
 ## DockerHub Set-Up
 * First, we need to sign into DockerHub. This is the external cloud-based image storing system. DockerHub stores docker images in repositories. This is a similar process to github, but for docker images. We will also need to create a repository for this web app project.
 
-![dockerhub](dockerhub.png)
+![dockerhub1](dockerhub1.png)
 
 As you can see here, I have logged into DockerHub and created a repository named bookbuddy-lg.
 
@@ -34,7 +34,7 @@ As you can see here, I have logged into DockerHub and created a repository named
 
 Tagname is typicaly 'latest'. This command can also be found on DockerHub once you enter the repository.
 
-![dockerpush](dockerpush.png)
+![dockerhub](dockerhub.png)
 
 Once this step is completed, the docker image is publicly available on DockerHub and stored there.
 
@@ -42,14 +42,24 @@ Once this step is completed, the docker image is publicly available on DockerHub
 
 * Azure allows for web apps to be created as a resource. Click make webapp, enter resource group, web app name, and other important information. Below is an example of the inputs needed. Confirm docker container is selected under the heading 'publish'.
 
-![makeapp](makeapp.png)
+![webapp](webapp.png)
 
-* Additionaly, to make the app, you need to go to the docker tab, and enter the image and tag name for the dockerHub repository created earlier.
 
-![makeapp2](makeapp2.png)
+Additionaly, to make the app, you need to go to the docker tab, and enter the image and tag name for the dockerHub repository created earlier.
+
+![webapp2](webapp2.png)
 
 * Click review and create, and wait for your app to be successfully deployed. Once this occurs, we need to confirm the configurations including websites_port and CI/CD enabled = true.
 * Once that is saved, we are provided a link from Azure that is now our successfully created web app.
+
+Here are some examples of what the deployment screen looks like through the deployment process.
+
+![deploymentprogress1](deploymentprogress1.png)
+![deploymentcomplete](deploymentcomplete.png)
+
+We need to confirm configurations and the information in the deployment center:
+![config](configurations.png)
+![deploymentcenter](deploymentcenter.png)
 
 Here are some images of the deployed app - note the domain includes the name of the web app.
 
